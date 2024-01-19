@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <script src="gallery.js"></script>
+  </head>
+  <body>
+    <div
+      tabindex="1"
+      id="image"
+      tabindex="0"
+      onfocus="focusImage()"
+      onblur="blurImage()"
+      onload="onload()"
+    >
+      Hover over an image below to display here.
+    </div>
+
+    <img
+      tabindex="2"
+      class="preview"
+      alt="Styling with a Bandana"
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+
+    <img
+      class="preview"
+      alt="With My Boy"
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+
+    <img
+      class="preview"
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
+      alt="Young Puppy"
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+    <img
+      class="preview"
+      src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+      alt="Two "
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+    <img
+      class="preview"
+      src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?"
+      alt="Puppy"
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+    <img
+      class="preview"
+      src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg"
+      alt="Puppy Eyes"
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+  </body>
+</html>
